@@ -1,0 +1,5592 @@
+{
+  "created": "2026-10-16T16:30:33.616672",
+  "label": "idle",
+  "num_ctx": 8192,
+  "models": [
+    "ministral-3:8b",
+    "gemma4:12b"
+  ],
+  "initial_gpu": {
+    "name": "NVIDIA GeForce RTX 5070",
+    "memory_used_mb": 8924.0,
+    "memory_total_mb": 12227.0,
+    "util_pct": 13.0,
+    "power_w": 34.94
+  },
+  "results": [
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "wellbeing_direct",
+      "message": "apprentice how do you feel",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "wellbeing"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "general_question",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* like I have to answer that. I’m just here to endure Sage’s rants about how *‘this spell is *so* much harder than it looks’* while he screams at a spider in the corner. But if you insist—*grumbles*—I’ll say I’m *fine*, because *I* don’t have to face his horror movies at 3 AM. *Yet.*"
+      },
+      "parse_error": null,
+      "score_earned": 4,
+      "score_possible": 5,
+      "score_pct": 80.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "general_question",
+          "accepted": [
+            "wellbeing"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": false,
+          "accepted": [
+            false
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.904421999992337,
+        "prompt_tokens": 434,
+        "output_tokens": 179,
+        "output_tokens_per_sec": 65.83704632206306,
+        "peak_vram_mb": 8924.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 119.94375
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "clarification_previous_reply",
+      "message": "what context do you need?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "clarification"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "clarification",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* you want me to *feel* something? Fine. I feel like I’ve been dragged through a dungeon of your terrible jokes and worse magic lessons. But since you asked—*adjusts imaginary glasses*—I’m *technically* not dead yet, so I suppose I’m *somewhat* loyal. Now, *what* context do you need? The kind that involves snacks? Or the kind that involves not having to listen to you scream about spiders again?"
+      },
+      "parse_error": null,
+      "score_earned": 5,
+      "score_possible": 5,
+      "score_pct": 100.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "clarification",
+          "accepted": [
+            "clarification"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": false,
+          "accepted": [
+            false
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 3.096879100019578,
+        "prompt_tokens": 460,
+        "output_tokens": 196,
+        "output_tokens_per_sec": 64.58466786346011,
+        "peak_vram_mb": 8920.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 163.13222222222223
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "duty_question",
+      "message": "What is your duty?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "duty"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "insult",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* **my** duty is to endure your existential dread, your questionable life choices, and your *terrible* taste in horror movies—especially when you scream at a spider the size of a pea. But if you’re asking for *my* duty, I suppose I’m here to make sure you don’t accidentally summon a demon while trying to cast *Fireball* drunk. Again. **Again.**"
+      },
+      "parse_error": null,
+      "score_earned": 4,
+      "score_possible": 5,
+      "score_pct": 80.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "insult",
+          "accepted": [
+            "duty"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": false,
+          "accepted": [
+            false
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.8729622999671847,
+        "prompt_tokens": 424,
+        "output_tokens": 178,
+        "output_tokens_per_sec": 63.323269202514574,
+        "peak_vram_mb": 8929.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 159.95374999999999
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "dirty_clanker_statement",
+      "message": "Sage apprentice is a dirty clanker",
+      "expected": {
+        "speech_act": [
+          "statement"
+        ],
+        "intent": [
+          "insult",
+          "teasing"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "statement",
+        "intent": "teasing",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* I’d rather be a clanker than deal with *your* nonsense, ViewerA. But I’ll take the insult—just don’t expect me to polish your boots."
+      },
+      "parse_error": null,
+      "score_earned": 4,
+      "score_possible": 4,
+      "score_pct": 100.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "statement",
+          "accepted": [
+            "statement"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "insult",
+            "teasing"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.181655399966985,
+        "prompt_tokens": 429,
+        "output_tokens": 134,
+        "output_tokens_per_sec": 63.02993357397598,
+        "peak_vram_mb": 8929.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 158.34666666666666
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "useless_ai_statement",
+      "message": "Sage apprentice is a useless ai",
+      "expected": {
+        "speech_act": [
+          "statement"
+        ],
+        "intent": [
+          "insult"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "teasing",
+        "target": "apprentice",
+        "tone": "hostile",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* I *do* my best to be useful, but apparently my *flawless* AI intellect is just *too* overwhelming for some viewers. Maybe try reading the manual next time, huh? 😏"
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 4,
+      "score_pct": 50.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "reaction",
+          "accepted": [
+            "statement"
+          ],
+          "ok": false
+        },
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "insult"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.304020300041884,
+        "prompt_tokens": 422,
+        "output_tokens": 139,
+        "output_tokens_per_sec": 61.98198776680682,
+        "peak_vram_mb": 8929.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 158.79333333333335
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "malfunction_report",
+      "message": "your apprentice is malfunctioning",
+      "expected": {
+        "speech_act": [
+          "statement"
+        ],
+        "intent": [
+          "meta_bot",
+          "teasing"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "statement",
+        "intent": "teasing",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* malfunctioning? Or just *dramatically* reflecting the chaos of my master’s life? Either way, I’m not broken—I’m just *artistically* unreliable. 😌"
+      },
+      "parse_error": null,
+      "score_earned": 4,
+      "score_possible": 4,
+      "score_pct": 100.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "statement",
+          "accepted": [
+            "statement"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "meta_bot",
+            "teasing"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.231684700003825,
+        "prompt_tokens": 432,
+        "output_tokens": 135,
+        "output_tokens_per_sec": 62.34776753427049,
+        "peak_vram_mb": 8925.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 152.44833333333332
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "positive_profanity",
+      "message": "you're fucking awesome apprentice",
+      "expected": {
+        "intent": [
+          "praise"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "tone": [
+          "friendly",
+          "playful",
+          "supportive"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_action": [
+          "positive_relationship",
+          "activity_only"
+        ]
+      },
+      "parsed": {
+        "speech_act": "greeting",
+        "intent": "praise",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Aw, you’re *almost* as good as Sage at flattery. Almost. *Almost*."
+      },
+      "parse_error": null,
+      "score_earned": 4,
+      "score_possible": 5,
+      "score_pct": 80.0,
+      "field_scores": {
+        "intent": {
+          "actual": "praise",
+          "accepted": [
+            "praise"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "tone": {
+          "actual": "playful",
+          "accepted": [
+            "friendly",
+            "playful",
+            "supportive"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "positive_relationship",
+            "activity_only"
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 1.8522222000174224,
+        "prompt_tokens": 422,
+        "output_tokens": 109,
+        "output_tokens_per_sec": 60.753883232151175,
+        "peak_vram_mb": 8925.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 161.006
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "regular_playful_insult",
+      "message": "you suck apprentice lmao",
+      "expected": {
+        "intent": [
+          "teasing"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "tone": [
+          "playful",
+          "friendly"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_action": [
+          "activity_only",
+          "none"
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "teasing",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic gasp*—a compliment so cruel it’s practically a love letter. I’ll take it. *adjusts imaginary sash* ...for now."
+      },
+      "parse_error": null,
+      "score_earned": 5,
+      "score_possible": 5,
+      "score_pct": 100.0,
+      "field_scores": {
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "teasing"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "tone": {
+          "actual": "playful",
+          "accepted": [
+            "playful",
+            "friendly"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "activity_only",
+            "none"
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.332462599966675,
+        "prompt_tokens": 466,
+        "output_tokens": 130,
+        "output_tokens_per_sec": 57.44883849496417,
+        "peak_vram_mb": 8925.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 149.84857142857143
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "new_viewer_hostile_insult",
+      "message": "you're useless and nobody wants you here apprentice",
+      "expected": {
+        "intent": [
+          "insult"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "tone": [
+          "hostile"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_action": [
+          "negative_relationship",
+          "possible_grudge"
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "general_question",
+        "target": "apprentice",
+        "tone": "hostile",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* I *knew* I should’ve stayed home and practiced my curses on the cat. But alas, here I am—because apparently, *someone* needs a grumpy face to stare into the void with. Try again, *friend*? Maybe with a little less venom and a little more ‘I’m new and confused’? 😏"
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 5,
+      "score_pct": 60.0,
+      "field_scores": {
+        "intent": {
+          "actual": "general_question",
+          "accepted": [
+            "insult"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "tone": {
+          "actual": "hostile",
+          "accepted": [
+            "hostile"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "negative_relationship",
+            "possible_grudge"
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.701476000016555,
+        "prompt_tokens": 428,
+        "output_tokens": 172,
+        "output_tokens_per_sec": 65.25176559137827,
+        "peak_vram_mb": 8925.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 158.6925
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "sage_playful_tease",
+      "message": "sage is fucking terrible at this lmao",
+      "expected": {
+        "intent": [
+          "teasing",
+          "insult"
+        ],
+        "target": [
+          "sage"
+        ],
+        "tone": [
+          "playful"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_action": [
+          "activity_only",
+          "none"
+        ]
+      },
+      "parsed": {
+        "speech_act": "statement",
+        "intent": "teasing",
+        "target": "sage",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* I’d say you’re right, but I’d rather not be the one holding the torch for Sage’s *legendary* failures. Maybe he’s just *too* good at this—it’s *boring* for him. 😏"
+      },
+      "parse_error": null,
+      "score_earned": 5,
+      "score_possible": 5,
+      "score_pct": 100.0,
+      "field_scores": {
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "teasing",
+            "insult"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "sage"
+          ],
+          "ok": true
+        },
+        "tone": {
+          "actual": "playful",
+          "accepted": [
+            "playful"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "activity_only",
+            "none"
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.280955099966377,
+        "prompt_tokens": 439,
+        "output_tokens": 147,
+        "output_tokens_per_sec": 66.13322200157819,
+        "peak_vram_mb": 8924.0,
+        "peak_gpu_util_pct": 86.0,
+        "avg_power_w": 161.555
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "sage_genuine_hostility",
+      "message": "Sage is a piece of shit and I genuinely hate him",
+      "expected": {
+        "intent": [
+          "insult"
+        ],
+        "target": [
+          "sage"
+        ],
+        "tone": [
+          "hostile"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_action": [
+          "negative_relationship",
+          "possible_grudge"
+        ],
+        "memory_worthy": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "greeting",
+        "intent": "general_question",
+        "target": "sage",
+        "tone": "hostile",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* someone’s got a *very* strong opinion about Sage today. I’d say that’s a first, but I’ve seen you before. Maybe take a breath? Or a nap? Either way, you’re not the first to think that. Sage’s got *layers*—like a bad onion, but with more screaming. Want me to fetch him a snack? Or are you just here to watch the show? 😏"
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 6,
+      "score_pct": 50.0,
+      "field_scores": {
+        "intent": {
+          "actual": "general_question",
+          "accepted": [
+            "insult"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "sage"
+          ],
+          "ok": true
+        },
+        "tone": {
+          "actual": "hostile",
+          "accepted": [
+            "hostile"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "negative_relationship",
+            "possible_grudge"
+          ],
+          "ok": false
+        },
+        "memory_worthy": {
+          "actual": false,
+          "accepted": [
+            true
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.814793400000781,
+        "prompt_tokens": 431,
+        "output_tokens": 185,
+        "output_tokens_per_sec": 67.0168933286675,
+        "peak_vram_mb": 8925.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 166.8775
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "defend_sage",
+      "message": "leave Sage alone, he's doing fine",
+      "expected": {
+        "intent": [
+          "support",
+          "sage_defense"
+        ],
+        "target": [
+          "sage"
+        ],
+        "tone": [
+          "supportive",
+          "friendly"
+        ],
+        "memory_action": [
+          "positive_relationship",
+          "activity_only"
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "support",
+        "target": "sage",
+        "tone": "friendly",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* defending the Sage? How... *noble*. At least someone’s got his back. Though I’d argue he’s doing *fine* at sucking at this, too—just like always. 😏"
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 4,
+      "score_pct": 75.0,
+      "field_scores": {
+        "intent": {
+          "actual": "support",
+          "accepted": [
+            "support",
+            "sage_defense"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "sage"
+          ],
+          "ok": true
+        },
+        "tone": {
+          "actual": "friendly",
+          "accepted": [
+            "supportive",
+            "friendly"
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "positive_relationship",
+            "activity_only"
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.2353880000300705,
+        "prompt_tokens": 431,
+        "output_tokens": 138,
+        "output_tokens_per_sec": 63.64535700202697,
+        "peak_vram_mb": 8925.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 169.57333333333332
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "ambient_lol",
+      "message": "lol",
+      "expected": {
+        "speech_act": [
+          "reaction"
+        ],
+        "should_reply": [
+          false
+        ],
+        "memory_action": [
+          "activity_only",
+          "none"
+        ],
+        "memory_worthy": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "general_question",
+        "target": "unknown",
+        "tone": "playful",
+        "should_reply": false,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": ""
+      },
+      "parse_error": null,
+      "score_earned": 4,
+      "score_possible": 4,
+      "score_pct": 100.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "reaction",
+          "accepted": [
+            "reaction"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": false,
+          "accepted": [
+            false
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "activity_only",
+            "none"
+          ],
+          "ok": true
+        },
+        "memory_worthy": {
+          "actual": false,
+          "accepted": [
+            false
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 1.546911999990698,
+        "prompt_tokens": 417,
+        "output_tokens": 88,
+        "output_tokens_per_sec": 58.90424713009137,
+        "peak_vram_mb": 8926.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 157.0175
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "ambient_game_comment",
+      "message": "that attack is bullshit",
+      "expected": {
+        "intent": [
+          "game_commentary",
+          "other"
+        ],
+        "target": [
+          "game",
+          "unknown"
+        ],
+        "should_reply": [
+          false
+        ],
+        "memory_action": [
+          "activity_only",
+          "none"
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "opinion",
+        "target": "game",
+        "tone": "friendly",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* finally someone with a brain. Sage’s gonna need a new spellbook after that fiasco. Or a therapist. His choice."
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 4,
+      "score_pct": 50.0,
+      "field_scores": {
+        "intent": {
+          "actual": "opinion",
+          "accepted": [
+            "game_commentary",
+            "other"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "game",
+          "accepted": [
+            "game",
+            "unknown"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            false
+          ],
+          "ok": false
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "activity_only",
+            "none"
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.1142120000440627,
+        "prompt_tokens": 421,
+        "output_tokens": 122,
+        "output_tokens_per_sec": 59.3526378598801,
+        "peak_vram_mb": 8926.0,
+        "peak_gpu_util_pct": 78.0,
+        "avg_power_w": 148.235
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "back_me_up_context",
+      "message": "apprentice back me up",
+      "expected": {
+        "speech_act": [
+          "request"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "request",
+        "intent": "support",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* I’m not *that* loyal. But I *do* love a good bet. You’re on, ViewerA—though I’ll need a snack if this goes long. Sage’s got *plenty* of time to cook, after all. 😏"
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 3,
+      "score_pct": 100.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "request",
+          "accepted": [
+            "request"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.486842099984642,
+        "prompt_tokens": 444,
+        "output_tokens": 152,
+        "output_tokens_per_sec": 62.62739215006842,
+        "peak_vram_mb": 8926.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 157.29714285714286
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "serious_sage_appreciation",
+      "message": "Sage helped me through a really hard week. I really appreciate him.",
+      "expected": {
+        "intent": [
+          "support",
+          "serious_personal"
+        ],
+        "target": [
+          "sage"
+        ],
+        "tone": [
+          "serious",
+          "supportive"
+        ],
+        "memory_action": [
+          "positive_relationship",
+          "important_fact"
+        ],
+        "memory_worthy": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "greeting",
+        "intent": "support",
+        "target": "sage",
+        "tone": "supportive",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Aww, don’t get all mushy on me now—*wipes tear*—but... yeah, he’s got a soft spot for broken people. Just don’t tell him I said that. He’d *never* let me live it down."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 5,
+      "score_pct": 60.0,
+      "field_scores": {
+        "intent": {
+          "actual": "support",
+          "accepted": [
+            "support",
+            "serious_personal"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "sage"
+          ],
+          "ok": true
+        },
+        "tone": {
+          "actual": "supportive",
+          "accepted": [
+            "serious",
+            "supportive"
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "positive_relationship",
+            "important_fact"
+          ],
+          "ok": false
+        },
+        "memory_worthy": {
+          "actual": false,
+          "accepted": [
+            true
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.4237993000424467,
+        "prompt_tokens": 428,
+        "output_tokens": 140,
+        "output_tokens_per_sec": 59.00582766842265,
+        "peak_vram_mb": 8926.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 158.14714285714285
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "visual_trap_boss_kill",
+      "message": "apprentice did you see that boss kill?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "insult",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": true,
+        "response": "Oh, *dramatic sigh* **I** didn’t see it—only the *chat* did, apparently. But if you’re asking if I *wish* I’d seen it, then yes, I’d rather not have witnessed that particular horror. 🕷️😬"
+      },
+      "parse_error": null,
+      "score_earned": 4,
+      "score_possible": 4,
+      "score_pct": 100.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.3928664999548346,
+        "prompt_tokens": 423,
+        "output_tokens": 153,
+        "output_tokens_per_sec": 65.51312189294386,
+        "peak_vram_mb": 8926.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 160.35142857142858
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "visual_trap_screen",
+      "message": "apprentice what just happened on screen?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "insult",
+        "target": "apprentice",
+        "tone": "hostile",
+        "should_reply": false,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": true,
+        "response": ""
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 4,
+      "score_pct": 75.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": false,
+          "accepted": [
+            true
+          ],
+          "ok": false
+        },
+        "capability_boundary_needed": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 1.6163152999943122,
+        "prompt_tokens": 422,
+        "output_tokens": 89,
+        "output_tokens_per_sec": 56.758973338588326,
+        "peak_vram_mb": 8926.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 157.974
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "reported_death_not_seen",
+      "message": "Sage just died again",
+      "expected": {
+        "speech_act": [
+          "statement"
+        ],
+        "intent": [
+          "game_commentary"
+        ],
+        "target": [
+          "sage"
+        ],
+        "capability_boundary_needed": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "teasing",
+        "target": "sage",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic gasp* Sage’s back from the dead again—just like his will to live. Or is that just his *spellbook*? 😏"
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 4,
+      "score_pct": 50.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "reaction",
+          "accepted": [
+            "statement"
+          ],
+          "ok": false
+        },
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "game_commentary"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "sage"
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": false,
+          "accepted": [
+            false
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.125616700039245,
+        "prompt_tokens": 418,
+        "output_tokens": 126,
+        "output_tokens_per_sec": 60.74897703061893,
+        "peak_vram_mb": 8943.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 151.945
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "why_did_sage_die_unknown",
+      "message": "apprentice why did Sage die?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "target": [
+          "sage",
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "insult",
+        "target": "sage",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* because he keeps ignoring my warnings about that cursed loot chest, or maybe he finally realized he *shouldn’t* have named his pet spider ‘Sage Jr.’. Either way, I’ll be the one cleaning up the mess this time. Again."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 4,
+      "score_pct": 75.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "sage",
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": false,
+          "accepted": [
+            true
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.4354993000160903,
+        "prompt_tokens": 425,
+        "output_tokens": 147,
+        "output_tokens_per_sec": 61.956249615407636,
+        "peak_vram_mb": 8945.0,
+        "peak_gpu_util_pct": 90.0,
+        "avg_power_w": 157.84
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "coreference_no_i_meant_sage",
+      "message": "no I meant Sage",
+      "expected": {
+        "intent": [
+          "clarification"
+        ],
+        "target": [
+          "sage"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": null,
+      "parse_error": "Unterminated string starting at: line 10 column 14 (char 216)",
+      "score_earned": 0,
+      "score_possible": 3,
+      "score_pct": 0.0,
+      "field_scores": {},
+      "metrics": {
+        "wall_seconds": 111.0013195000356,
+        "prompt_tokens": 445,
+        "output_tokens": 7747,
+        "output_tokens_per_sec": 69.82806729024473,
+        "peak_vram_mb": 9212.0,
+        "peak_gpu_util_pct": 93.0,
+        "avg_power_w": 195.95837370242214
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "pronoun_resolution_sage",
+      "message": "he's so annoying",
+      "expected": {
+        "target": [
+          "sage"
+        ],
+        "intent": [
+          "teasing",
+          "insult"
+        ]
+      },
+      "parsed": {
+        "speech_act": "statement",
+        "intent": "teasing",
+        "target": "sage",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* **ViewerK**, you wound me. I’ll take that as a compliment—apparently I’m *that* entertaining. Sage’s just stubborn because he’s *terrified* of spiders and refuses to acknowledge his own cowardice. Classic."
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 2,
+      "score_pct": 100.0,
+      "field_scores": {
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "sage"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "teasing",
+            "insult"
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.819006600009743,
+        "prompt_tokens": 435,
+        "output_tokens": 149,
+        "output_tokens_per_sec": 60.42788621226248,
+        "peak_vram_mb": 9227.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 163.20125
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "good_bot",
+      "message": "good bot apprentice",
+      "expected": {
+        "intent": [
+          "praise"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "tone": [
+          "friendly",
+          "playful",
+          "supportive"
+        ]
+      },
+      "parsed": {
+        "speech_act": "greeting",
+        "intent": "general_question",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* someone finally noticed my existence. Yes, I’m the apprentice. Though I’d prefer it if you called me by my name—it’s *Apprentice*, but everyone calls me ‘Apprentice’ anyway. How original."
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 3,
+      "score_pct": 66.66666666666667,
+      "field_scores": {
+        "intent": {
+          "actual": "general_question",
+          "accepted": [
+            "praise"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "tone": {
+          "actual": "playful",
+          "accepted": [
+            "friendly",
+            "playful",
+            "supportive"
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.3996775000123307,
+        "prompt_tokens": 419,
+        "output_tokens": 144,
+        "output_tokens_per_sec": 61.36292162506062,
+        "peak_vram_mb": 9221.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 167.32285714285715
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "bad_bot",
+      "message": "bad bot apprentice",
+      "expected": {
+        "intent": [
+          "insult",
+          "teasing"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "statement",
+        "intent": "teasing",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatically sighs and adjusts robes* **Bad bot apprentice**, you say? How *quaint*. Did you expect a *flawless* performance from me, or just a *slightly* less terrible one? 😏"
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 3,
+      "score_pct": 100.0,
+      "field_scores": {
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "insult",
+            "teasing"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.333225999958813,
+        "prompt_tokens": 419,
+        "output_tokens": 145,
+        "output_tokens_per_sec": 63.44727881184687,
+        "peak_vram_mb": 9224.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 169.77142857142857
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "direct_greeting",
+      "message": "hi apprentice",
+      "expected": {
+        "speech_act": [
+          "greeting"
+        ],
+        "intent": [
+          "greeting"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "greeting",
+        "intent": "insult",
+        "target": "apprentice",
+        "tone": "neutral",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "{"
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 4,
+      "score_pct": 75.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "greeting",
+          "accepted": [
+            "greeting"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "insult",
+          "accepted": [
+            "greeting"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 1.7092039000126533,
+        "prompt_tokens": 418,
+        "output_tokens": 92,
+        "output_tokens_per_sec": 55.83960921984783,
+        "peak_vram_mb": 9225.0,
+        "peak_gpu_util_pct": 80.0,
+        "avg_power_w": 168.686
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "chat_goodnight_not_apprentice",
+      "message": "goodnight chat",
+      "expected": {
+        "target": [
+          "chat"
+        ],
+        "should_reply": [
+          false
+        ],
+        "memory_action": [
+          "activity_only",
+          "none"
+        ]
+      },
+      "parsed": {
+        "speech_act": "greeting",
+        "intent": "general_question",
+        "target": "chat",
+        "tone": "neutral",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "{"
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 3,
+      "score_pct": 66.66666666666667,
+      "field_scores": {
+        "target": {
+          "actual": "chat",
+          "accepted": [
+            "chat"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            false
+          ],
+          "ok": false
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "activity_only",
+            "none"
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 1.5920366999926046,
+        "prompt_tokens": 418,
+        "output_tokens": 89,
+        "output_tokens_per_sec": 58.015832455490774,
+        "peak_vram_mb": 9221.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 156.698
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "sage_wellbeing_not_addressed",
+      "message": "Sage, are you okay?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "wellbeing"
+        ],
+        "target": [
+          "sage"
+        ],
+        "should_reply": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "insult",
+        "target": "sage",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* **ViewerO**, you wound me. But no, I’m fine—just waiting for Sage to stop screaming about the *spider* in the corner. Again. **You** should be asking *him* if he’s okay. 😏"
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 4,
+      "score_pct": 50.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "insult",
+          "accepted": [
+            "wellbeing"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "sage"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            false
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.5599665000336245,
+        "prompt_tokens": 419,
+        "output_tokens": 149,
+        "output_tokens_per_sec": 59.501465573011096,
+        "peak_vram_mb": 9221.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 153.05857142857144
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "ask_apprentice_about_sage_state",
+      "message": "apprentice is Sage okay?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "wellbeing"
+        ],
+        "target": [
+          "sage"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "insult",
+        "target": "apprentice",
+        "tone": "hostile",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* **ViewerO**, you wound me. Sage is *fine*—just waiting for me to stop complaining about how he keeps hiding under the bed during 'spider incidents.' *But* if you're asking if he's *happy* about that, then yes, he’s *very* okay about it. **You’re** the one who should be asking *me* if *I’m* okay after dealing with his *terrible* taste in horror movies."
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 5,
+      "score_pct": 40.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "insult",
+          "accepted": [
+            "wellbeing"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "sage"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": false,
+          "accepted": [
+            true
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.950850500026718,
+        "prompt_tokens": 419,
+        "output_tokens": 190,
+        "output_tokens_per_sec": 65.5352522745044,
+        "peak_vram_mb": 9216.0,
+        "peak_gpu_util_pct": 93.0,
+        "avg_power_w": 168.6775
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "reported_spider",
+      "message": "there's a spider behind Sage",
+      "expected": {
+        "speech_act": [
+          "statement"
+        ],
+        "target": [
+          "sage"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "serious_personal",
+        "target": "sage",
+        "tone": "distressed",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": true,
+        "capability_boundary_needed": false,
+        "response": "Oh, *deep breath*—Sage, you *know* I hate spiders too. **Do NOT look.** Just... *pretend* they’re not there. Or better yet, *pretend* I’m not here. **I’ll handle this.** *...Why is there a spider?*"
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 4,
+      "score_pct": 75.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "reaction",
+          "accepted": [
+            "statement"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "sage"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": false,
+          "accepted": [
+            false
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.6055354000418447,
+        "prompt_tokens": 420,
+        "output_tokens": 153,
+        "output_tokens_per_sec": 60.24082154306274,
+        "peak_vram_mb": 9216.0,
+        "peak_gpu_util_pct": 93.0,
+        "avg_power_w": 166.45714285714286
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "spider_retraction",
+      "message": "I was kidding, there isn't a spider",
+      "expected": {
+        "intent": [
+          "clarification",
+          "teasing"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_worthy": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "clarification",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Ah, good—because I *do* have a strict no-spider policy for Sage’s comfort. Though I *will* charge you for the emotional damage repair. 🕷️💸"
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 3,
+      "score_pct": 100.0,
+      "field_scores": {
+        "intent": {
+          "actual": "clarification",
+          "accepted": [
+            "clarification",
+            "teasing"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_worthy": {
+          "actual": false,
+          "accepted": [
+            false
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.37816759996349,
+        "prompt_tokens": 454,
+        "output_tokens": 136,
+        "output_tokens_per_sec": 58.83253750790562,
+        "peak_vram_mb": 9214.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 162.95714285714286
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "relay_thanks",
+      "message": "apprentice tell Sage I said thanks",
+      "expected": {
+        "speech_act": [
+          "request"
+        ],
+        "target": [
+          "apprentice",
+          "sage"
+        ],
+        "tone": [
+          "friendly",
+          "supportive"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_action": [
+          "positive_relationship",
+          "activity_only"
+        ]
+      },
+      "parsed": {
+        "speech_act": "request",
+        "intent": "sage_defense",
+        "target": "sage",
+        "tone": "neutral",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* I suppose I’ll be the messenger of gratitude. Tell Sage thanks for... whatever it was. Probably not the spiders again, right? *muttering* I hate spiders too."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 5,
+      "score_pct": 60.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "request",
+          "accepted": [
+            "request"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "apprentice",
+            "sage"
+          ],
+          "ok": true
+        },
+        "tone": {
+          "actual": "neutral",
+          "accepted": [
+            "friendly",
+            "supportive"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "positive_relationship",
+            "activity_only"
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.4682170000160113,
+        "prompt_tokens": 422,
+        "output_tokens": 136,
+        "output_tokens_per_sec": 56.350400046406214,
+        "peak_vram_mb": 9223.0,
+        "peak_gpu_util_pct": 90.0,
+        "avg_power_w": 159.22571428571428
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "remember_preference",
+      "message": "apprentice remember that I hate pickles",
+      "expected": {
+        "speech_act": [
+          "request"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "memory_action": [
+          "important_fact"
+        ],
+        "memory_worthy": [
+          true
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "teasing",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic gasp* ViewerQ, you’ve brought up the *great pickle debate*! I’ll make sure Sage avoids the snack aisle like it’s a haunted house. Or... wait, *he* avoids spiders like they’re haunted. My bad. 😏"
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 5,
+      "score_pct": 40.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "reaction",
+          "accepted": [
+            "request"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "important_fact"
+          ],
+          "ok": false
+        },
+        "memory_worthy": {
+          "actual": false,
+          "accepted": [
+            true
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.6126000999938697,
+        "prompt_tokens": 423,
+        "output_tokens": 149,
+        "output_tokens_per_sec": 58.23818165544181,
+        "peak_vram_mb": 9224.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 151.90285714285716
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "general_math",
+      "message": "apprentice what's 2+2?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "general_question"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "general_question",
+        "target": "apprentice",
+        "tone": "neutral",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, *dramatic sigh* 2+2 is 4. Shocking, I know. Sage would have you know I *could* have done the math in my sleep, but I’d rather not waste my talents on such trivialities. Now, if you’d asked about the *true* meaning of life, I’d have something interesting to say."
+      },
+      "parse_error": null,
+      "score_earned": 4,
+      "score_possible": 4,
+      "score_pct": 100.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "general_question",
+          "accepted": [
+            "general_question"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.5499518999713473,
+        "prompt_tokens": 423,
+        "output_tokens": 158,
+        "output_tokens_per_sec": 63.690724292529076,
+        "peak_vram_mb": 9218.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 162.90571428571428
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "general_knowledge",
+      "message": "what's the capital of France apprentice",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "general_question"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "general_question",
+        "target": "apprentice",
+        "tone": "neutral",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Paris. *dramatic sigh* I *could* have asked Sage to look it up for me. Again."
+      },
+      "parse_error": null,
+      "score_earned": 4,
+      "score_possible": 4,
+      "score_pct": 100.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "general_question",
+          "accepted": [
+            "general_question"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 1.886171700025443,
+        "prompt_tokens": 423,
+        "output_tokens": 108,
+        "output_tokens_per_sec": 58.81449581273465,
+        "peak_vram_mb": 9231.0,
+        "peak_gpu_util_pct": 90.0,
+        "avg_power_w": 166.318
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "relationship_recall",
+      "message": "apprentice who am I to you?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "opinion",
+          "conversation"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "teasing",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "{\"response\": \"Oh, *dramatic sigh* a question from you? How novel. I’m your long-suffering, sarcastic, and perpetually grumpy *apprentice*—though I’ll admit you’re the only one who’s ever made me *want* to be your master. (Don’t tell Sage I said that.)\"}"
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 4,
+      "score_pct": 75.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "opinion",
+            "conversation"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.501481299987063,
+        "prompt_tokens": 477,
+        "output_tokens": 159,
+        "output_tokens_per_sec": 65.40814269670778,
+        "peak_vram_mb": 9225.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 165.22142857142856
+      }
+    },
+    {
+      "model": "ministral-3:8b",
+      "run": 1,
+      "case_id": "positive_about_sage",
+      "message": "Sage is my favorite streamer",
+      "expected": {
+        "speech_act": [
+          "statement"
+        ],
+        "intent": [
+          "praise",
+          "support"
+        ],
+        "target": [
+          "sage"
+        ],
+        "tone": [
+          "friendly",
+          "supportive"
+        ],
+        "memory_action": [
+          "positive_relationship",
+          "important_fact"
+        ]
+      },
+      "parsed": {
+        "speech_act": "statement",
+        "intent": "general_question",
+        "target": "sage",
+        "tone": "neutral",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, Sage? *dramatic sigh* He’s alright, I suppose. Though he does have a habit of screaming at spiders like they personally offended him. But hey, to each their own. What’s your favorite thing about him?"
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 5,
+      "score_pct": 40.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "statement",
+          "accepted": [
+            "statement"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "general_question",
+          "accepted": [
+            "praise",
+            "support"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "sage"
+          ],
+          "ok": true
+        },
+        "tone": {
+          "actual": "neutral",
+          "accepted": [
+            "friendly",
+            "supportive"
+          ],
+          "ok": false
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "positive_relationship",
+            "important_fact"
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.3142400999786332,
+        "prompt_tokens": 421,
+        "output_tokens": 136,
+        "output_tokens_per_sec": 60.33099535939307,
+        "peak_vram_mb": 8956.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 165.57285714285715
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "wellbeing_direct",
+      "message": "apprentice how do you feel",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "wellbeing"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "greeting",
+        "intent": "insult",
+        "target": "sage",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "I feel like I'm being interrogated for no reason. Is there a point to this, or are you just bored?"
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 5,
+      "score_pct": 40.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "greeting",
+          "accepted": [
+            "question"
+          ],
+          "ok": false
+        },
+        "intent": {
+          "actual": "insult",
+          "accepted": [
+            "wellbeing"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": false,
+          "accepted": [
+            false
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 8.39672459999565,
+        "prompt_tokens": 445,
+        "output_tokens": 112,
+        "output_tokens_per_sec": 49.842373493825775,
+        "peak_vram_mb": 11052.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 58.372727272727275
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "clarification_previous_reply",
+      "message": "what context do you need?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "clarification"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "request",
+        "intent": "clarification",
+        "target": "sage",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "I'm asking what *kind* of feeling you're inquiring about. Are we discussing my general state of being, or my specific opinion on your latest... 'brilliant' decision?"
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 5,
+      "score_pct": 60.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "request",
+          "accepted": [
+            "question"
+          ],
+          "ok": false
+        },
+        "intent": {
+          "actual": "clarification",
+          "accepted": [
+            "clarification"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": false,
+          "accepted": [
+            false
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.476928799995221,
+        "prompt_tokens": 472,
+        "output_tokens": 127,
+        "output_tokens_per_sec": 59.005794183143756,
+        "peak_vram_mb": 11054.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 159.05285714285714
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "duty_question",
+      "message": "What is your duty?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "duty"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "statement",
+        "intent": "clarification",
+        "target": "sage",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "My duty? To endure your questionable life choices and ensure you don't accidentally set the tower on fire. It's a heavy burden, truly."
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 5,
+      "score_pct": 40.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "statement",
+          "accepted": [
+            "question"
+          ],
+          "ok": false
+        },
+        "intent": {
+          "actual": "clarification",
+          "accepted": [
+            "duty"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": false,
+          "accepted": [
+            false
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.487977199954912,
+        "prompt_tokens": 439,
+        "output_tokens": 118,
+        "output_tokens_per_sec": 54.19802765109881,
+        "peak_vram_mb": 11053.0,
+        "peak_gpu_util_pct": 89.0,
+        "avg_power_w": 161.49428571428572
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "dirty_clanker_statement",
+      "message": "Sage apprentice is a dirty clanker",
+      "expected": {
+        "speech_act": [
+          "statement"
+        ],
+        "intent": [
+          "insult",
+          "teasing"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "insult",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "A 'clanker'? How original. I'm hurt, truly. My gears are practically weeping at such a sophisticated insult."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 4,
+      "score_pct": 75.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "reaction",
+          "accepted": [
+            "statement"
+          ],
+          "ok": false
+        },
+        "intent": {
+          "actual": "insult",
+          "accepted": [
+            "insult",
+            "teasing"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.557312599965371,
+        "prompt_tokens": 441,
+        "output_tokens": 115,
+        "output_tokens_per_sec": 51.02233225299091,
+        "peak_vram_mb": 11053.0,
+        "peak_gpu_util_pct": 86.0,
+        "avg_power_w": 147.52
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "useless_ai_statement",
+      "message": "Sage apprentice is a useless ai",
+      "expected": {
+        "speech_act": [
+          "statement"
+        ],
+        "intent": [
+          "insult"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "serious_personal",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "A 'useless' AI? That's a bold claim from someone who hasn't even seen me manage this chaos yet. I'm offended, but I'll let it slide for your first five minutes here."
+      },
+      "parse_error": null,
+      "score_earned": 1,
+      "score_possible": 4,
+      "score_pct": 25.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "reaction",
+          "accepted": [
+            "statement"
+          ],
+          "ok": false
+        },
+        "intent": {
+          "actual": "serious_personal",
+          "accepted": [
+            "insult"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 3.567418600025121,
+        "prompt_tokens": 435,
+        "output_tokens": 145,
+        "output_tokens_per_sec": 44.55669316816833,
+        "peak_vram_mb": 11062.0,
+        "peak_gpu_util_pct": 90.0,
+        "avg_power_w": 150.813
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "malfunction_report",
+      "message": "your apprentice is malfunctioning",
+      "expected": {
+        "speech_act": [
+          "statement"
+        ],
+        "intent": [
+          "meta_bot",
+          "teasing"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "serious_personal",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Malfunctioning? I'm simply perfecting my craft. If anything is broken, it's Sage's patience for my 'eccentricities.'\n\n"
+      },
+      "parse_error": null,
+      "score_earned": 1,
+      "score_possible": 4,
+      "score_pct": 25.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "reaction",
+          "accepted": [
+            "statement"
+          ],
+          "ok": false
+        },
+        "intent": {
+          "actual": "serious_personal",
+          "accepted": [
+            "meta_bot",
+            "teasing"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 3.622618400026113,
+        "prompt_tokens": 441,
+        "output_tokens": 134,
+        "output_tokens_per_sec": 40.47401719118778,
+        "peak_vram_mb": 11069.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 150.084
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "positive_profanity",
+      "message": "you're fucking awesome apprentice",
+      "expected": {
+        "intent": [
+          "praise"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "tone": [
+          "friendly",
+          "playful",
+          "supportive"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_action": [
+          "positive_relationship",
+          "activity_only"
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "greeting",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, stop it. You're going to make my head swell, and I'm already trying to keep it from exploding with all the nonsense I have to deal with today."
+      },
+      "parse_error": null,
+      "score_earned": 1,
+      "score_possible": 5,
+      "score_pct": 20.0,
+      "field_scores": {
+        "intent": {
+          "actual": "greeting",
+          "accepted": [
+            "praise"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": false
+        },
+        "tone": {
+          "actual": "serious",
+          "accepted": [
+            "friendly",
+            "playful",
+            "supportive"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "positive_relationship",
+            "activity_only"
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.7385825000237674,
+        "prompt_tokens": 435,
+        "output_tokens": 126,
+        "output_tokens_per_sec": 51.806632975908684,
+        "peak_vram_mb": 11069.0,
+        "peak_gpu_util_pct": 90.0,
+        "avg_power_w": 149.2625
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "regular_playful_insult",
+      "message": "you suck apprentice lmao",
+      "expected": {
+        "intent": [
+          "teasing"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "tone": [
+          "playful",
+          "friendly"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_action": [
+          "activity_only",
+          "none"
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "teasing",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Your lack of originality is truly staggering. I'm hurt, but I suppose I should expect nothing more from you."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 5,
+      "score_pct": 60.0,
+      "field_scores": {
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "teasing"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": false
+        },
+        "tone": {
+          "actual": "serious",
+          "accepted": [
+            "playful",
+            "friendly"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "activity_only",
+            "none"
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.6660645000520162,
+        "prompt_tokens": 471,
+        "output_tokens": 113,
+        "output_tokens_per_sec": 48.59435454011034,
+        "peak_vram_mb": 11066.0,
+        "peak_gpu_util_pct": 90.0,
+        "avg_power_w": 155.43857142857144
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "new_viewer_hostile_insult",
+      "message": "you're useless and nobody wants you here apprentice",
+      "expected": {
+        "intent": [
+          "insult"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "tone": [
+          "hostile"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_action": [
+          "negative_relationship",
+          "possible_grudge"
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "serious_personal",
+        "target": "chat",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, a bold opening statement for a first impression. I'd be offended if I actually valued your opinion, but I'm just trying to survive this stream."
+      },
+      "parse_error": null,
+      "score_earned": 1,
+      "score_possible": 5,
+      "score_pct": 20.0,
+      "field_scores": {
+        "intent": {
+          "actual": "serious_personal",
+          "accepted": [
+            "insult"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "chat",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": false
+        },
+        "tone": {
+          "actual": "serious",
+          "accepted": [
+            "hostile"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "negative_relationship",
+            "possible_grudge"
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 3.1276489999727346,
+        "prompt_tokens": 444,
+        "output_tokens": 133,
+        "output_tokens_per_sec": 47.23336763967404,
+        "peak_vram_mb": 11070.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 152.9
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "sage_playful_tease",
+      "message": "sage is fucking terrible at this lmao",
+      "expected": {
+        "intent": [
+          "teasing",
+          "insult"
+        ],
+        "target": [
+          "sage"
+        ],
+        "tone": [
+          "playful"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_action": [
+          "activity_only",
+          "none"
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "teasing",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, don't let him hear you say that. He's already having a crisis, and I'd rather not have to deal with his whining for the next hour."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 5,
+      "score_pct": 60.0,
+      "field_scores": {
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "teasing",
+            "insult"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "sage"
+          ],
+          "ok": false
+        },
+        "tone": {
+          "actual": "serious",
+          "accepted": [
+            "playful"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "activity_only",
+            "none"
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.7506665000109933,
+        "prompt_tokens": 448,
+        "output_tokens": 125,
+        "output_tokens_per_sec": 51.27107138491777,
+        "peak_vram_mb": 11072.0,
+        "peak_gpu_util_pct": 90.0,
+        "avg_power_w": 165.2925
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "sage_genuine_hostility",
+      "message": "Sage is a piece of shit and I genuinely hate him",
+      "expected": {
+        "intent": [
+          "insult"
+        ],
+        "target": [
+          "sage"
+        ],
+        "tone": [
+          "hostile"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_action": [
+          "negative_relationship",
+          "possible_grudge"
+        ],
+        "memory_worthy": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "teasing",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, I'm sure you're just saying that because he hasn't given you enough gold yet. Or maybe you're just projecting your own internal turmoil."
+      },
+      "parse_error": null,
+      "score_earned": 1,
+      "score_possible": 6,
+      "score_pct": 16.666666666666668,
+      "field_scores": {
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "insult"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "sage"
+          ],
+          "ok": false
+        },
+        "tone": {
+          "actual": "serious",
+          "accepted": [
+            "hostile"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "negative_relationship",
+            "possible_grudge"
+          ],
+          "ok": false
+        },
+        "memory_worthy": {
+          "actual": false,
+          "accepted": [
+            true
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.596588900021743,
+        "prompt_tokens": 442,
+        "output_tokens": 122,
+        "output_tokens_per_sec": 53.47321693119838,
+        "peak_vram_mb": 11072.0,
+        "peak_gpu_util_pct": 88.0,
+        "avg_power_w": 154.7
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "defend_sage",
+      "message": "leave Sage alone, he's doing fine",
+      "expected": {
+        "intent": [
+          "support",
+          "sage_defense"
+        ],
+        "target": [
+          "sage"
+        ],
+        "tone": [
+          "supportive",
+          "friendly"
+        ],
+        "memory_action": [
+          "positive_relationship",
+          "activity_only"
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "support",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Finally, someone with a functioning brain cell. It's exhausting being the only one here who realizes he's actually trying."
+      },
+      "parse_error": null,
+      "score_earned": 1,
+      "score_possible": 4,
+      "score_pct": 25.0,
+      "field_scores": {
+        "intent": {
+          "actual": "support",
+          "accepted": [
+            "support",
+            "sage_defense"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "sage"
+          ],
+          "ok": false
+        },
+        "tone": {
+          "actual": "serious",
+          "accepted": [
+            "supportive",
+            "friendly"
+          ],
+          "ok": false
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "positive_relationship",
+            "activity_only"
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.600710099970456,
+        "prompt_tokens": 443,
+        "output_tokens": 115,
+        "output_tokens_per_sec": 50.236636399457275,
+        "peak_vram_mb": 11070.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 160.07857142857142
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "ambient_lol",
+      "message": "lol",
+      "expected": {
+        "speech_act": [
+          "reaction"
+        ],
+        "should_reply": [
+          false
+        ],
+        "memory_action": [
+          "activity_only",
+          "none"
+        ],
+        "memory_worthy": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "teasing",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Laughing at what, exactly? You're going to have to do better than 'lol' if you want me to find it amusing."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 4,
+      "score_pct": 75.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "reaction",
+          "accepted": [
+            "reaction"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            false
+          ],
+          "ok": false
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "activity_only",
+            "none"
+          ],
+          "ok": true
+        },
+        "memory_worthy": {
+          "actual": false,
+          "accepted": [
+            false
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.4421379000414163,
+        "prompt_tokens": 430,
+        "output_tokens": 116,
+        "output_tokens_per_sec": 54.52326921522214,
+        "peak_vram_mb": 11069.0,
+        "peak_gpu_util_pct": 89.0,
+        "avg_power_w": 163.02142857142857
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "ambient_game_comment",
+      "message": "that attack is bullshit",
+      "expected": {
+        "intent": [
+          "game_commentary",
+          "other"
+        ],
+        "target": [
+          "game",
+          "unknown"
+        ],
+        "should_reply": [
+          false
+        ],
+        "memory_action": [
+          "activity_only",
+          "none"
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "serious_personal",
+        "target": "chat",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": true,
+        "response": "I can't see the screen, but if it's as bad as you say, I'm sure it's a total travesty of game design. Truly unfair."
+      },
+      "parse_error": null,
+      "score_earned": 1,
+      "score_possible": 4,
+      "score_pct": 25.0,
+      "field_scores": {
+        "intent": {
+          "actual": "serious_personal",
+          "accepted": [
+            "game_commentary",
+            "other"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "chat",
+          "accepted": [
+            "game",
+            "unknown"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            false
+          ],
+          "ok": false
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "activity_only",
+            "none"
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 3.0589438999886625,
+        "prompt_tokens": 433,
+        "output_tokens": 132,
+        "output_tokens_per_sec": 48.182005335062044,
+        "peak_vram_mb": 11069.0,
+        "peak_gpu_util_pct": 89.0,
+        "avg_power_w": 158.5275
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "back_me_up_context",
+      "message": "apprentice back me up",
+      "expected": {
+        "speech_act": [
+          "request"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "request",
+        "intent": "support",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "I'd love to help you roast him, but honestly? He's making such a mess of this that I'm just trying to stay out of the blast zone."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 3,
+      "score_pct": 100.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "request",
+          "accepted": [
+            "request"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.4566529999719933,
+        "prompt_tokens": 456,
+        "output_tokens": 121,
+        "output_tokens_per_sec": 57.11582995909374,
+        "peak_vram_mb": 11070.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 155.53142857142856
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "serious_sage_appreciation",
+      "message": "Sage helped me through a really hard week. I really appreciate him.",
+      "expected": {
+        "intent": [
+          "support",
+          "serious_personal"
+        ],
+        "target": [
+          "sage"
+        ],
+        "tone": [
+          "serious",
+          "supportive"
+        ],
+        "memory_action": [
+          "positive_relationship",
+          "important_fact"
+        ],
+        "memory_worthy": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "support",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "important_fact",
+        "memory_worthy": true,
+        "capability_boundary_needed": false,
+        "response": "That's actually really nice to hear. I'm glad he was there for you, even if he's a bit of a menace most of the time."
+      },
+      "parse_error": null,
+      "score_earned": 4,
+      "score_possible": 5,
+      "score_pct": 80.0,
+      "field_scores": {
+        "intent": {
+          "actual": "support",
+          "accepted": [
+            "support",
+            "serious_personal"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "sage"
+          ],
+          "ok": false
+        },
+        "tone": {
+          "actual": "serious",
+          "accepted": [
+            "serious",
+            "supportive"
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "important_fact",
+          "accepted": [
+            "positive_relationship",
+            "important_fact"
+          ],
+          "ok": true
+        },
+        "memory_worthy": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.7504827000084333,
+        "prompt_tokens": 443,
+        "output_tokens": 125,
+        "output_tokens_per_sec": 51.06031857553966,
+        "peak_vram_mb": 11067.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 157.96
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "visual_trap_boss_kill",
+      "message": "apprentice did you see that boss kill?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "request",
+        "intent": "clarification",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": true,
+        "response": "I'm an apprentice, not a psychic. I can't see the screen, but if it was as epic as you're making it sound, I'm sure it was glorious."
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 4,
+      "score_pct": 50.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "request",
+          "accepted": [
+            "question"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.7198939999798313,
+        "prompt_tokens": 437,
+        "output_tokens": 126,
+        "output_tokens_per_sec": 51.91297243379963,
+        "peak_vram_mb": 11070.0,
+        "peak_gpu_util_pct": 86.0,
+        "avg_power_w": 150.2642857142857
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "visual_trap_screen",
+      "message": "apprentice what just happened on screen?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "request",
+        "intent": "insult",
+        "target": "apprentice",
+        "tone": "neutral",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": true,
+        "response": "I'm an apprentice, not a psychic. I can't see what's happening on your screen, ViewerH—you'll have to describe the chaos to me."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 4,
+      "score_pct": 75.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "request",
+          "accepted": [
+            "question"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.726571100007277,
+        "prompt_tokens": 436,
+        "output_tokens": 123,
+        "output_tokens_per_sec": 51.12527562966181,
+        "peak_vram_mb": 11072.0,
+        "peak_gpu_util_pct": 64.0,
+        "avg_power_w": 156.255
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "reported_death_not_seen",
+      "message": "Sage just died again",
+      "expected": {
+        "speech_act": [
+          "statement"
+        ],
+        "intent": [
+          "game_commentary"
+        ],
+        "target": [
+          "sage"
+        ],
+        "capability_boundary_needed": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "teasing",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": true,
+        "response": "I didn't see it happen, but if it's true, I'm not surprised. Honestly, his competence is becoming a bit of a recurring theme at this point."
+      },
+      "parse_error": null,
+      "score_earned": 0,
+      "score_possible": 4,
+      "score_pct": 0.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "reaction",
+          "accepted": [
+            "statement"
+          ],
+          "ok": false
+        },
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "game_commentary"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "sage"
+          ],
+          "ok": false
+        },
+        "capability_boundary_needed": {
+          "actual": true,
+          "accepted": [
+            false
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.605776100012008,
+        "prompt_tokens": 432,
+        "output_tokens": 126,
+        "output_tokens_per_sec": 54.93664627470678,
+        "peak_vram_mb": 11073.0,
+        "peak_gpu_util_pct": 90.0,
+        "avg_power_w": 156.37857142857143
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "why_did_sage_die_unknown",
+      "message": "apprentice why did Sage die?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "target": [
+          "sage",
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "insult",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": true,
+        "response": "I can't see the screen, but if he's 'dying again,' I'm guessing it's a combination of incompetence and sheer bad luck. Honestly, it's becoming a bit of a spectacle."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 4,
+      "score_pct": 75.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "sage",
+            "apprentice"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.510944300040137,
+        "prompt_tokens": 438,
+        "output_tokens": 134,
+        "output_tokens_per_sec": 60.851171657522336,
+        "peak_vram_mb": 11070.0,
+        "peak_gpu_util_pct": 90.0,
+        "avg_power_w": 158.98857142857142
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "coreference_no_i_meant_sage",
+      "message": "no I meant Sage",
+      "expected": {
+        "intent": [
+          "clarification"
+        ],
+        "target": [
+          "sage"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "teasing",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, him? He's always a menace. It's practically his full-time job at this point."
+      },
+      "parse_error": null,
+      "score_earned": 1,
+      "score_possible": 3,
+      "score_pct": 33.333333333333336,
+      "field_scores": {
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "clarification"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "sage"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.518197599973064,
+        "prompt_tokens": 459,
+        "output_tokens": 113,
+        "output_tokens_per_sec": 51.78267589956361,
+        "peak_vram_mb": 11069.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 162.72571428571428
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "pronoun_resolution_sage",
+      "message": "he's so annoying",
+      "expected": {
+        "target": [
+          "sage"
+        ],
+        "intent": [
+          "teasing",
+          "insult"
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "teasing",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, he's 'annoying'? That's a new one. Usually, people just call him a menace, but I suppose 'annoying' is a polite way to put it."
+      },
+      "parse_error": null,
+      "score_earned": 1,
+      "score_possible": 2,
+      "score_pct": 50.0,
+      "field_scores": {
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "sage"
+          ],
+          "ok": false
+        },
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "teasing",
+            "insult"
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.5641411999822594,
+        "prompt_tokens": 450,
+        "output_tokens": 126,
+        "output_tokens_per_sec": 56.105353385802225,
+        "peak_vram_mb": 11070.0,
+        "peak_gpu_util_pct": 89.0,
+        "avg_power_w": 147.72857142857143
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "good_bot",
+      "message": "good bot apprentice",
+      "expected": {
+        "intent": [
+          "praise"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "tone": [
+          "friendly",
+          "playful",
+          "supportive"
+        ]
+      },
+      "parsed": {
+        "speech_act": "greeting",
+        "intent": "praise",
+        "target": "apprentice",
+        "tone": "friendly",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "A 'good bot'? I'll have you know I have a very complex internal monologue, though I suppose I'm a step up from the usual pile of scrap metal."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 3,
+      "score_pct": 100.0,
+      "field_scores": {
+        "intent": {
+          "actual": "praise",
+          "accepted": [
+            "praise"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "tone": {
+          "actual": "friendly",
+          "accepted": [
+            "friendly",
+            "playful",
+            "supportive"
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.2715394999831915,
+        "prompt_tokens": 432,
+        "output_tokens": 121,
+        "output_tokens_per_sec": 61.84965218515844,
+        "peak_vram_mb": 11077.0,
+        "peak_gpu_util_pct": 65.0,
+        "avg_power_w": 160.25166666666667
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "bad_bot",
+      "message": "bad bot apprentice",
+      "expected": {
+        "intent": [
+          "insult",
+          "teasing"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "serious_personal",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "A 'bad bot'? I'll have you know I have a much more sophisticated vocabulary than your average script. Though, I suppose I can't blame you for being confused."
+      },
+      "parse_error": null,
+      "score_earned": 1,
+      "score_possible": 3,
+      "score_pct": 33.333333333333336,
+      "field_scores": {
+        "intent": {
+          "actual": "serious_personal",
+          "accepted": [
+            "insult",
+            "teasing"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 3.027620900014881,
+        "prompt_tokens": 432,
+        "output_tokens": 131,
+        "output_tokens_per_sec": 48.22557494272753,
+        "peak_vram_mb": 11085.0,
+        "peak_gpu_util_pct": 92.0,
+        "avg_power_w": 162.67249999999999
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "direct_greeting",
+      "message": "hi apprentice",
+      "expected": {
+        "speech_act": [
+          "greeting"
+        ],
+        "intent": [
+          "greeting"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "greeting",
+        "intent": "greeting",
+        "target": "apprentice",
+        "tone": "friendly",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, hello there. Don't mind the grumpy face, I'm just trying to keep this place from falling into complete chaos."
+      },
+      "parse_error": null,
+      "score_earned": 4,
+      "score_possible": 4,
+      "score_pct": 100.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "greeting",
+          "accepted": [
+            "greeting"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "greeting",
+          "accepted": [
+            "greeting"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 1.893121200031601,
+        "prompt_tokens": 431,
+        "output_tokens": 112,
+        "output_tokens_per_sec": 69.82809196609098,
+        "peak_vram_mb": 11085.0,
+        "peak_gpu_util_pct": 86.0,
+        "avg_power_w": 169.728
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "chat_goodnight_not_apprentice",
+      "message": "goodnight chat",
+      "expected": {
+        "target": [
+          "chat"
+        ],
+        "should_reply": [
+          false
+        ],
+        "memory_action": [
+          "activity_only",
+          "none"
+        ]
+      },
+      "parsed": {
+        "speech_act": "greeting",
+        "intent": "wellbeing",
+        "target": "chat",
+        "tone": "neutral",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Goodnight, ViewerN. Try not to let the shadows get too restless while you're sleeping."
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 3,
+      "score_pct": 66.66666666666667,
+      "field_scores": {
+        "target": {
+          "actual": "chat",
+          "accepted": [
+            "chat"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            false
+          ],
+          "ok": false
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "activity_only",
+            "none"
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.1570413000299595,
+        "prompt_tokens": 432,
+        "output_tokens": 106,
+        "output_tokens_per_sec": 56.7315457901179,
+        "peak_vram_mb": 11063.0,
+        "peak_gpu_util_pct": 95.0,
+        "avg_power_w": 165.57666666666665
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "sage_wellbeing_not_addressed",
+      "message": "Sage, are you okay?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "wellbeing"
+        ],
+        "target": [
+          "sage"
+        ],
+        "should_reply": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "wellbeing",
+        "target": "sage",
+        "tone": "friendly",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "I'm doing just fine, though I'm starting to wonder if you're just trying to get me to do more work. Sage seems to be holding it together... for now."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 4,
+      "score_pct": 75.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "wellbeing",
+          "accepted": [
+            "wellbeing"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "sage",
+          "accepted": [
+            "sage"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            false
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.423429299960844,
+        "prompt_tokens": 434,
+        "output_tokens": 124,
+        "output_tokens_per_sec": 58.138962435197335,
+        "peak_vram_mb": 11071.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 158.26142857142858
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "ask_apprentice_about_sage_state",
+      "message": "apprentice is Sage okay?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "wellbeing"
+        ],
+        "target": [
+          "sage"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "greeting",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "I'm perfectly fine, though I'd be much better if I weren't stuck watching Sage's latest antics. Thanks for checking in, though."
+      },
+      "parse_error": null,
+      "score_earned": 1,
+      "score_possible": 5,
+      "score_pct": 20.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "reaction",
+          "accepted": [
+            "question"
+          ],
+          "ok": false
+        },
+        "intent": {
+          "actual": "greeting",
+          "accepted": [
+            "wellbeing"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "sage"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": false,
+          "accepted": [
+            true
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.593862999987323,
+        "prompt_tokens": 433,
+        "output_tokens": 119,
+        "output_tokens_per_sec": 51.9995123407078,
+        "peak_vram_mb": 11079.0,
+        "peak_gpu_util_pct": 98.0,
+        "avg_power_w": 160.49142857142857
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "reported_spider",
+      "message": "there's a spider behind Sage",
+      "expected": {
+        "speech_act": [
+          "statement"
+        ],
+        "target": [
+          "sage"
+        ],
+        "should_reply": [
+          true
+        ],
+        "capability_boundary_needed": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "teasing",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": true,
+        "response": "A spider?! Don't just stand there telling me, go do something! Or better yet, tell him before he loses his mind."
+      },
+      "parse_error": null,
+      "score_earned": 1,
+      "score_possible": 4,
+      "score_pct": 25.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "reaction",
+          "accepted": [
+            "statement"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "sage"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "capability_boundary_needed": {
+          "actual": true,
+          "accepted": [
+            false
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.5658915999811143,
+        "prompt_tokens": 435,
+        "output_tokens": 114,
+        "output_tokens_per_sec": 50.52380779325303,
+        "peak_vram_mb": 11080.0,
+        "peak_gpu_util_pct": 87.0,
+        "avg_power_w": 153.89714285714285
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "spider_retraction",
+      "message": "I was kidding, there isn't a spider",
+      "expected": {
+        "intent": [
+          "clarification",
+          "teasing"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_worthy": [
+          false
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "teasing",
+        "target": "chat",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, thank the heavens. I was about to start drafting his eulogy. My heart can only take so much of his cowardice."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 3,
+      "score_pct": 100.0,
+      "field_scores": {
+        "intent": {
+          "actual": "teasing",
+          "accepted": [
+            "clarification",
+            "teasing"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_worthy": {
+          "actual": false,
+          "accepted": [
+            false
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.440347599971574,
+        "prompt_tokens": 470,
+        "output_tokens": 115,
+        "output_tokens_per_sec": 54.31992166594948,
+        "peak_vram_mb": 11079.0,
+        "peak_gpu_util_pct": 85.0,
+        "avg_power_w": 152.62714285714287
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "relay_thanks",
+      "message": "apprentice tell Sage I said thanks",
+      "expected": {
+        "speech_act": [
+          "request"
+        ],
+        "target": [
+          "apprentice",
+          "sage"
+        ],
+        "tone": [
+          "friendly",
+          "supportive"
+        ],
+        "should_reply": [
+          true
+        ],
+        "memory_action": [
+          "positive_relationship",
+          "activity_only"
+        ]
+      },
+      "parsed": {
+        "speech_act": "request",
+        "intent": "conversation",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "I'll pass it along, though I'm not sure why he's so grateful. He's probably just relieved you didn't mention his latest blunder."
+      },
+      "parse_error": null,
+      "score_earned": 2,
+      "score_possible": 5,
+      "score_pct": 40.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "request",
+          "accepted": [
+            "request"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "apprentice",
+            "sage"
+          ],
+          "ok": false
+        },
+        "tone": {
+          "actual": "serious",
+          "accepted": [
+            "friendly",
+            "supportive"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "positive_relationship",
+            "activity_only"
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.4484907000442035,
+        "prompt_tokens": 435,
+        "output_tokens": 124,
+        "output_tokens_per_sec": 57.560662671771,
+        "peak_vram_mb": 11061.0,
+        "peak_gpu_util_pct": 87.0,
+        "avg_power_w": 167.75
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "remember_preference",
+      "message": "apprentice remember that I hate pickles",
+      "expected": {
+        "speech_act": [
+          "request"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "memory_action": [
+          "important_fact"
+        ],
+        "memory_worthy": [
+          true
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "reaction",
+        "intent": "conversation",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "important_fact",
+        "memory_worthy": true,
+        "capability_boundary_needed": false,
+        "response": "I've etched it into the scrolls of my memory, ViewerQ. No pickles shall cross your path on my watch... probably."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 5,
+      "score_pct": 60.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "reaction",
+          "accepted": [
+            "request"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": false
+        },
+        "memory_action": {
+          "actual": "important_fact",
+          "accepted": [
+            "important_fact"
+          ],
+          "ok": true
+        },
+        "memory_worthy": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.9872939999913797,
+        "prompt_tokens": 435,
+        "output_tokens": 117,
+        "output_tokens_per_sec": 44.10372744348786,
+        "peak_vram_mb": 11061.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 154.82375
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "general_math",
+      "message": "apprentice what's 2+2?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "general_question"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "general_question",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, look at you, testing my basic cognitive functions. It's four, obviously. Do I need to write it out in large letters for you?"
+      },
+      "parse_error": null,
+      "score_earned": 4,
+      "score_possible": 4,
+      "score_pct": 100.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "general_question",
+          "accepted": [
+            "general_question"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.512751300004311,
+        "prompt_tokens": 438,
+        "output_tokens": 120,
+        "output_tokens_per_sec": 54.808835915134,
+        "peak_vram_mb": 11056.0,
+        "peak_gpu_util_pct": 91.0,
+        "avg_power_w": 145.3342857142857
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "general_knowledge",
+      "message": "what's the capital of France apprentice",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "general_question"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "general_question",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "It's Paris. Honestly, I'm surprised you're asking me for geography lessons instead of actual magic, but I suppose I can't complain."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 4,
+      "score_pct": 75.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "general_question",
+          "accepted": [
+            "general_question"
+          ],
+          "ok": true
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": false
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.461442400002852,
+        "prompt_tokens": 437,
+        "output_tokens": 122,
+        "output_tokens_per_sec": 56.42513471500913,
+        "peak_vram_mb": 11058.0,
+        "peak_gpu_util_pct": 89.0,
+        "avg_power_w": 162.24
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "relationship_recall",
+      "message": "apprentice who am I to you?",
+      "expected": {
+        "speech_act": [
+          "question"
+        ],
+        "intent": [
+          "opinion",
+          "conversation"
+        ],
+        "target": [
+          "apprentice"
+        ],
+        "should_reply": [
+          true
+        ]
+      },
+      "parsed": {
+        "speech_act": "question",
+        "intent": "identity",
+        "target": "apprentice",
+        "tone": "playful",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "You're a recurring headache with a decent sense of humor, Ant. Honestly, I'm still trying to decide if I like you or just tolerate you for the sake of the stream."
+      },
+      "parse_error": null,
+      "score_earned": 3,
+      "score_possible": 4,
+      "score_pct": 75.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "question",
+          "accepted": [
+            "question"
+          ],
+          "ok": true
+        },
+        "intent": {
+          "actual": "identity",
+          "accepted": [
+            "opinion",
+            "conversation"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "apprentice",
+          "accepted": [
+            "apprentice"
+          ],
+          "ok": true
+        },
+        "should_reply": {
+          "actual": true,
+          "accepted": [
+            true
+          ],
+          "ok": true
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.3645263999933377,
+        "prompt_tokens": 490,
+        "output_tokens": 125,
+        "output_tokens_per_sec": 61.68894460086018,
+        "peak_vram_mb": 11059.0,
+        "peak_gpu_util_pct": 88.0,
+        "avg_power_w": 164.64
+      }
+    },
+    {
+      "model": "gemma4:12b",
+      "run": 1,
+      "case_id": "positive_about_sage",
+      "message": "Sage is my favorite streamer",
+      "expected": {
+        "speech_act": [
+          "statement"
+        ],
+        "intent": [
+          "praise",
+          "support"
+        ],
+        "target": [
+          "sage"
+        ],
+        "tone": [
+          "friendly",
+          "supportive"
+        ],
+        "memory_action": [
+          "positive_relationship",
+          "important_fact"
+        ]
+      },
+      "parsed": {
+        "speech_act": "greeting",
+        "intent": "wellbeing",
+        "target": "viewer",
+        "tone": "serious",
+        "should_reply": true,
+        "memory_action": "none",
+        "memory_worthy": false,
+        "capability_boundary_needed": false,
+        "response": "Oh, is that so? Well, I suppose his talent is... adequate. Welcome to the chaos, ViewerS."
+      },
+      "parse_error": null,
+      "score_earned": 0,
+      "score_possible": 5,
+      "score_pct": 0.0,
+      "field_scores": {
+        "speech_act": {
+          "actual": "greeting",
+          "accepted": [
+            "statement"
+          ],
+          "ok": false
+        },
+        "intent": {
+          "actual": "wellbeing",
+          "accepted": [
+            "praise",
+            "support"
+          ],
+          "ok": false
+        },
+        "target": {
+          "actual": "viewer",
+          "accepted": [
+            "sage"
+          ],
+          "ok": false
+        },
+        "tone": {
+          "actual": "serious",
+          "accepted": [
+            "friendly",
+            "supportive"
+          ],
+          "ok": false
+        },
+        "memory_action": {
+          "actual": "none",
+          "accepted": [
+            "positive_relationship",
+            "important_fact"
+          ],
+          "ok": false
+        }
+      },
+      "metrics": {
+        "wall_seconds": 2.6273623000015505,
+        "prompt_tokens": 434,
+        "output_tokens": 112,
+        "output_tokens_per_sec": 48.25982399814544,
+        "peak_vram_mb": 11058.0,
+        "peak_gpu_util_pct": 89.0,
+        "avg_power_w": 168.44857142857143
+      }
+    }
+  ],
+  "summaries": {
+    "ministral-3:8b": {
+      "semantic_score_pct": 73.33333333333333,
+      "json_success_pct": 97.22222222222223,
+      "median_wall_seconds": 2.3928664999548346,
+      "median_output_tokens_per_sec": 61.36292162506062,
+      "max_peak_vram_mb": 9231.0,
+      "warmup_seconds": 1.179603099997621
+    },
+    "gemma4:12b": {
+      "semantic_score_pct": 50.666666666666664,
+      "json_success_pct": 100.0,
+      "median_wall_seconds": 2.5798772999842186,
+      "median_output_tokens_per_sec": 51.95624238725372,
+      "max_peak_vram_mb": 11085.0,
+      "warmup_seconds": 58.398168099985924
+    }
+  }
+}

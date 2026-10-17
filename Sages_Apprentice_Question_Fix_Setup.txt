@@ -1,0 +1,94 @@
+SAGES_APPRENTICE QUESTION-BIAS FIX
+==================================
+
+WHY IT WAS STUCK
+----------------
+Language Analyzer v2.1 has a structural question heuristic that strips an Apprentice address and then checks QuestionStartsTerms. Because that list contains "is", a declaration such as:
+
+    Sage apprentice is a dirty clanker
+
+becomes effectively:
+
+    is a dirty clanker
+
+and is marked as a question.
+
+A second problem then magnifies that error: Attention Engine v1.2 treats saIsQuestion, behavior=question, OR broad question-like intents as questionLike, and its generic addressed_question fallback is late in the response-class chain.
+
+Finally, Character Layer used sage_question as a broad fallback for almost every Sage question, so real questions about wellbeing, duty, or a prior answer all collapsed into the same response pool.
+
+FILES TO REPLACE
+----------------
+1. SA - Observe Chat main Execute C# -> SA - Observe Chat Pipeline v1.3.cs
+2. SA - Character Layer Execute C# -> SA - Character Layer v2.0.cs
+3. SA - Attention Engine Execute C# -> SA - Attention Engine v1.4.cs
+4. SA - Response Brain Execute C# -> SA - Response Brain v1.3.cs
+
+DO NOT CHANGE
+-------------
+- SA - Phase1 Guard
+- SA - Phase1 Guard Gate
+- SA - Phase1 Trace
+- SA - Phase2 Reply Bridge
+- Existing viewer commands
+- Existing Language Analyzer action
+- Existing Context Engine action
+- Existing learning/memory/session actions
+
+OUTER SA - Observe Chat ORDER
+-----------------------------
+1. Run Action: SA - Phase1 Guard
+2. Execute C#: existing Phase1 Guard Gate
+3. Set Argument: saSuppressSend = false (Auto Type ON)
+4. Execute C#: SA - Observe Chat Pipeline v1.3.cs
+5. Run Action: SA - Phase1 Trace
+
+The main Observe Chat C# itself calls:
+Language Analyzer -> early repair -> Context Engine -> Reply Bridge -> Persistent Learning -> Behavior Memory -> Session State -> Character Layer -> Attention Engine -> Response Brain
+
+TEST MODE
+---------
+For testing only, add these Set Argument sub-actions immediately before the main Observe Chat C#:
+
+saSuppressSend = true
+saDeterministicAttention = true
+saDeterministicResponse = true
+saBypassAttentionCooldown = true
+
+Use Auto Type ON for all booleans.
+
+EXPECTED TESTS
+--------------
+Sage: apprentice how do you feel
+  saIsQuestion=True
+  saIntent=wellbeing_check
+  saCharacterResponseClass=character_wellbeing
+  saResponseClass=character_wellbeing
+
+Sage: what context do you need?
+  saIsQuestion=True
+  saCharacterResponseClass=clarification_followup
+  saResponseClass=clarification_followup
+
+Sage: What is your duty?
+  saIsQuestion=True
+  saCharacterResponseClass=character_duty
+  saResponseClass=character_duty
+
+Viewer: Sage apprentice is a dirty clanker
+  saOriginalIsQuestion=True (shows what Language Analyzer originally did)
+  saIsQuestion=False
+  saIntent=insult
+  saQuestionLike=False
+  saResponseClass=weird_insult
+
+Viewer: Sage apprentice is a useless ai
+  saIsQuestion=False
+  saIntent=insult
+  saQuestionLike=False
+  saResponseClass=weird_insult
+
+Viewer: your apprentice is malfunctioning
+  saResponseClass=apprentice_malfunction
+
+After testing, remove or disable the three deterministic/bypass arguments and restore saSuppressSend=false.
